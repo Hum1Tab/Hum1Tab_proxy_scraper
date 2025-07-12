@@ -1,0 +1,11 @@
+{
+  "validate_proxies": true,
+  "max_concurrent_requests": 100,
+  "max_concurrent_validations": 200,
+  "request_timeout": 10,
+  "proxy_timeout": 5,
+  "save_raw_proxies": true,
+  "retry_count": 3,
+  "delay_between_requests": 0.1,
+  "auto_save_settings": true
+}

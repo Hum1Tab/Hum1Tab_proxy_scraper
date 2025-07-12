@@ -1,0 +1,252 @@
+{
+  "version": "1.2",
+  "last_updated": "2025-07-12 13:00:00",
+  "sources": {
+    "http": [
+      {
+        "name": "ProxyScrape HTTP",
+        "url": "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "timeout": 15,
+        "description": "ProxyScrape HTTP proxies"
+      },
+      {
+        "name": "ProxyList HTTP",
+        "url": "https://www.proxy-list.download/api/v1/get?type=http",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "ProxyList HTTP proxies"
+      },
+      {
+        "name": "FreeProxyList",
+        "url": "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "GitHub HTTP proxy list"
+      },
+      {
+        "name": "Proxy-List Download HTTP (alt)",
+        "url": "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "hookzof GitHub HTTP/HTTPS proxy list"
+      },
+      {
+        "name": "ProxyNova HTTP",
+        "url": "https://www.proxynova.com/proxy-server-list/country-us/",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "ProxyNova US HTTP proxies (table scraping may be needed)"
+      },
+      {
+        "name": "Spys.me HTTP",
+        "url": "http://spys.me/proxy.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "spys.me plain text HTTP proxies"
+      },
+      {
+        "name": "Monosans HTTP",
+        "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "GitHub: Monosans HTTP proxies"
+      },
+      {
+        "name": "SSLProxies.org",
+        "url": "https://www.sslproxies.org/",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "Didsoft SSL HTTP proxies (table scraping may be needed)"
+      },
+      {
+        "name": "clarketm Proxy‑List HTTP",
+        "url": "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "clarketm daily‑updated free HTTP/HTTPS proxy list"
+      },
+      {
+        "name": "vakhov Fresh‑Proxy HTTP",
+        "url": "https://vakhov.github.io/fresh-proxy-list/http.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "Fresh list updated every 5‑20 min (HTTP)"
+      }
+    ],
+    "socks4": [
+      {
+        "name": "ProxyScrape SOCKS4",
+        "url": "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=10000&country=all",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "timeout": 15,
+        "description": "ProxyScrape SOCKS4 proxies"
+      },
+      {
+        "name": "ProxyList SOCKS4",
+        "url": "https://www.proxy-list.download/api/v1/get?type=socks4",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "ProxyList SOCKS4 proxies"
+      },
+      {
+        "name": "GitHub SOCKS4",
+        "url": "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks4.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "GitHub SOCKS4 proxy list"
+      },
+      {
+        "name": "Proxy-List Download SOCKS4 (alt)",
+        "url": "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "hookzof GitHub SOCKS4/5 proxy list (mixed)"
+      },
+      {
+        "name": "Spys.me SOCKS4",
+        "url": "http://spys.me/socks.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "spys.me plain text SOCKS4/5 proxies"
+      },
+      {
+        "name": "Monosans SOCKS4",
+        "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "GitHub: Monosans SOCKS4 proxies"
+      },
+      {
+        "name": "vakhov Fresh‑Proxy SOCKS4",
+        "url": "https://vakhov.github.io/fresh-proxy-list/socks4.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "Fresh list updated every 5‑20 min (SOCKS4)"
+      },
+      {
+        "name": "clarketm Proxy‑List SOCKS4",
+        "url": "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "clarketm daily‑updated list including SOCKS4"
+      }
+    ],
+    "socks5": [
+      {
+        "name": "ProxyScrape SOCKS5",
+        "url": "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        },
+        "timeout": 15,
+        "description": "ProxyScrape SOCKS5 proxies"
+      },
+      {
+        "name": "ProxyList SOCKS5",
+        "url": "https://www.proxy-list.download/api/v1/get?type=socks5",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "ProxyList SOCKS5 proxies"
+      },
+      {
+        "name": "GitHub SOCKS5",
+        "url": "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "GitHub SOCKS5 proxy list"
+      },
+      {
+        "name": "Proxy-List Download SOCKS5 (alt)",
+        "url": "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "hookzof GitHub SOCKS5 proxy list (mixed)"
+      },
+      {
+        "name": "Spys.me SOCKS5",
+        "url": "http://spys.me/socks.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "spys.me plain text SOCKS4/5 proxies"
+      },
+      {
+        "name": "Monosans SOCKS5",
+        "url": "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "GitHub: Monosans SOCKS5 proxies"
+      },
+      {
+        "name": "vakhov Fresh‑Proxy SOCKS5",
+        "url": "https://vakhov.github.io/fresh-proxy-list/socks5.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "Fresh list updated every 5‑20 min (SOCKS5)"
+      },
+      {
+        "name": "clarketm Proxy‑List SOCKS5",
+        "url": "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt",
+        "enabled": true,
+        "parse_format": "ip_port_per_line",
+        "headers": {},
+        "timeout": 15,
+        "description": "clarketm daily‑updated list including SOCKS5"
+      }
+    ]
+  }
+}

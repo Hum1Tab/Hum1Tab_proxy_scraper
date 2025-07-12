@@ -1,4 +1,6 @@
 # Hum1Tab Proxy Scraper v1.0
+<img width="1109" height="626" alt="image" src="https://github.com/user-attachments/assets/fa2d14c3-0b55-4176-9c23-6d4be1db9176" />
+
 
 シンプル・高速なPython製プロキシスクレイパー。
 

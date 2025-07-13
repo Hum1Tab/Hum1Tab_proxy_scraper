@@ -541,12 +541,6 @@ class AsyncProxyScraper:
         """プロキシを非同期でファイルに保存"""
         try:
             async with aiofiles.open(filename, 'w', encoding='utf-8') as f:
-                if include_stats:
-                    await f.write(f"# Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
-                    await f.write(f"# Total proxies: {len(proxies)}\n")
-                    await f.write(f"# Source: Enhanced Async Proxy Scraper v3.1\n")
-                    await f.write(f"# Validation: {'ON' if self.settings.validate_proxies else 'OFF'}\n\n")
-                
                 for proxy in proxies:
                     await f.write(f"{proxy}\n")
             
